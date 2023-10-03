@@ -1,8 +1,8 @@
-
 import { useCallback, useEffect, useRef, useState } from "react";
 import image from '../assets/Brand Quube logo.svg'
-import image2 from '../assets/Brand Quube BG.svg'
-import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs';
+import image2 from '../assets/Brand Quube Portfolio-01.svg'
+import image3 from '../assets/Brand Quube Portfolio-02.svg'
+import { BsFacebook, BsInstagram, BsLinkedin, BsWhatsapp } from 'react-icons/bs';
 
 const Maintainance = () => {
 
@@ -74,13 +74,15 @@ const Maintainance = () => {
   }, [getTimeDifference]);
   useEffect(() => {
     startCountDown();
-  }, [startCountDown]); return (
+  }, [startCountDown]);
+  return (
     <>
       <img className="absolute" src={image2} />
+      <img className="absolute" src={image3} />
       <div className="relative py-8">
         <div className="m-auto">
-          <div className="max-w-md m-auto p-8">
-            <img className="aspect-square" src={image} />
+          <div className="m-auto p-8">
+            <img className="h-72 w-72 mx-auto animate-fadeIn" src={image} />
           </div>
           <div className="max-w-4xl m-auto">
             <div className="m-auto flex gap-3 sm:gap-1 flex-row bg-transparent h-fit w-fit rounded-lg overflow-hidden">
@@ -192,24 +194,31 @@ const Maintainance = () => {
           </div>
           <div className="m-auto p-8">
             <div className="m-auto flex justify-center">
-              <div className="w-auto p-2">
+              <div className="w-auto p-2 animate-bounce">
                 <a href="https://www.facebook.com/brandquube?mibextid=LQQJ4d">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white hover:scale-105 duration-300">
                     <BsFacebook color="white" size={30} />
                   </div>
                 </a>
               </div>
-              <div className="w-auto p-2">
+              <div className="w-auto p-2 animate-bounce">
                 <a href="https://instagram.com/brandquube_?igshid=MzRlODBiNWFlZA==">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white hover:scale-105 duration-300">
                     <BsInstagram color="white" size={30} />
                   </div>
                 </a>
               </div>
-              <div className="w-auto p-2">
+              <div className="w-auto p-2 animate-bounce">
                 <a href="https://www.linkedin.com/company/brand-quube/">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white hover:scale-105 duration-300">
                     <BsLinkedin color="white" size={30} />
+                  </div>
+                </a>
+              </div>
+              <div className="w-auto p-2 animate-bounce">
+                <a href="https://www.linkedin.com/company/brand-quube/">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white hover:scale-105 duration-300">
+                    <BsWhatsapp color="green" size={30} />
                   </div>
                 </a>
               </div>
