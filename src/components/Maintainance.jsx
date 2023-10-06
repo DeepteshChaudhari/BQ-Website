@@ -77,14 +77,14 @@ const Maintainance = () => {
   }, [startCountDown]);
   return (
     <>
-      <img className="absolute" src={image2} />
-      <img className="absolute" src={image3} />
+      <img className="absolute rotate-90 sm:rotate-0" src={image2} />
+      <img className="absolute rotate-90 sm:rotate-0" src={image3} />
       <div className="relative py-8">
         <div className="m-auto">
-          <div className="m-auto p-8">
-            <img className="h-72 w-72 mx-auto animate-fadeIn" src={image} />
+          <div className="m-auto p-2 sm:p-8">
+            <img className="h-24 w-24 sm:h-72 sm:w-72 mx-auto" src={image} />
           </div>
-          <div className="max-w-4xl m-auto">
+          <div className="hidden sm:block max-w-4xl m-auto">
             <div className="m-auto flex gap-3 sm:gap-1 flex-row bg-transparent h-fit w-fit rounded-lg overflow-hidden">
               <div className="relative">
                 <svg className="-rotate-90 h-48 w-48">
@@ -192,8 +192,8 @@ const Maintainance = () => {
               </div>
             </div>
           </div>
-          <div className="m-auto p-8">
-            <div className="m-auto flex justify-center">
+          <div className="flex justify-center p-8">
+            <div className="max-w-md grid grid-cols-2 sm:grid-cols-4">
               <div className="w-auto p-2 animate-bounce">
                 <a href="https://www.facebook.com/brandquube?mibextid=LQQJ4d">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white hover:scale-105 duration-300">
